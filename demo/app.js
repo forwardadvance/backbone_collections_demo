@@ -16,6 +16,7 @@ var catCollection = new CatCollection();
 catCollection.push(new Cat({name: "Mister Whiskers", age: 12}))
 catCollection.push(new Cat({name: "Fluffy the Second", age:15}))
 
+catCollection.on('all', () => {console.log('changed')})
 
 
 // Show a collection
